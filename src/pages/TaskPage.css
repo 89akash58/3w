@@ -1,0 +1,9 @@
+.spans {
+  position: "absolute";
+  right: "-10px";
+  top: "-10px";
+  background: "green";
+  color: "white";
+  border-radius: "10px";
+  padding: "5px";
+}

@@ -1,0 +1,40 @@
+.nav-link-custom {
+  margin: 0 10px;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  background-color: white;
+  color: blue;
+}
+
+.nav-container {
+  /* add this to make the nav links appear horizontally */
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Add this media query to move nav links to bottom on mobile and tablet screens */
+@media (max-width: 1000px) {
+  .nav-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a; /* add a background color to the nav links */
+    padding: 10px;
+    text-align: center;
+    flex-direction: row; /* add this to space out the nav links */
+  }
+  .nav-link-custom {
+    flex: 1; /* add this to make the nav links equal width */
+    &:hover {
+      background-color: red;
+    }
+  }
+}
